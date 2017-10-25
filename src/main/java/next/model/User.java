@@ -12,6 +12,12 @@ public class User {
         this.name = name;
         this.email = email;
     }
+    
+    public void updateUser(User user) {
+    		this.password = user.getPassword();
+    		this.name = user.getName();
+    		this.email = user.getEmail();
+    }
 
     public String getUserId() {
         return userId;
